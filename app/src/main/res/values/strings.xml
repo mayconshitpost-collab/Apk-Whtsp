@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">View Once Saver</string>
+    <string name="accessibility_service_label">View Once Saver</string>
+    <string name="accessibility_service_description">Detecta quando uma foto ou vídeo de visualização única é aberta no WhatsApp e salva automaticamente.</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📲 View Once Saver"
+        android:textColor="@color/green_primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp" />
+
+    <!-- Status acessibilidade -->
+    <TextView
+        android:id="@+id/tvAccessStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verificando acessibilidade..."
+        android:textColor="@color/orange_warn"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:paddingBottom="8dp" />
+
+    <!-- Botão ativar acessibilidade -->
+    <Button
+        android:id="@+id/btnAccessibility"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="⚙️  Ativar Serviço de Acessibilidade"
+        android:backgroundTint="@color/blue_btn"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Botão buscar -->
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="🔍  Buscar Fotos / Vídeos Salvos"
+        android:backgroundTint="@color/green_primary"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Botão ver galeria salva -->
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="🖼️  Ver Fotos Já Salvas"
+        android:backgroundTint="#374151"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toque em Buscar para encontrar mídias"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:paddingBottom="6dp" />
+
+    <!-- Lista de resultados -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp" />
+
+</LinearLayout>
